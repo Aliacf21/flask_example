@@ -8,8 +8,9 @@ def student():
 @app.route('/result',methods = ['POST', 'GET'])
 def result():
    if request.method == 'POST':
-      result = request.form['impath']
-      return render_template("result.html",result = result)
+      state = request.form['state']
+      result1 = request.form['vehicle1']
+      return render_template("result.html",result = state, result1=result1)
 
 if __name__ == '__main__':
    app.run(debug = True)
