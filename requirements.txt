@@ -1,8 +1,4 @@
 alabaster==0.7.10
-anaconda==0.0.1.1
-anaconda-client==1.6.9
-anaconda-navigator==1.7.0
-anaconda-project==0.8.2
 anvil-uplink==0.3.34
 appnope==0.1.0
 appscript==1.0.1
@@ -58,7 +54,6 @@ entrypoints==0.2.3
 et-xmlfile==1.0.1
 fastai==1.0.34
 fastcache==1.0.2
-fastprogress @ file:///home/jhoward/anaconda3/conda-bld/fastprogress_1597927594295/work
 filelock==2.0.13
 Fiona==1.8.18
 Flask==0.12.2
