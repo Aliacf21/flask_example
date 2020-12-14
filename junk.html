@@ -1,0 +1,51 @@
+<div id="map"></div>
+
+   <div style= "height: 400px" id="mapContainer"></div>
+
+         <form action = "http://localhost:5000/result" method = "POST">
+         <!-- <p>Name <input type = "text" name = "Name" /></p>
+         <p>Physics <input type = "text" name = "Physics" /></p>
+         <p>Chemistry <input type = "text" name = "chemistry" /></p>
+         <p>Maths <input type ="text" name = "Mathematics" /></p> -->
+         <p>Image Path <input type ="text" name = "impath" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+      
+   </div>
+
+   
+   <script> 
+      // Initialize the platform object:
+      var platform = new H.service.Platform({
+        'apikey': '-72PZzQyELFB-SSY69bZ3T4z3HUsTUnD5ttfNtWeudI'
+      });
+     
+      const lat = 39.152993;
+      const long = -101.08733;
+   
+   // Obtain the default map types from the platform object
+      var maptypes = platform.createDefaultLayers();
+
+
+      // Instantiate (and display) a map object:
+      var map = new H.Map(
+        document.getElementById('mapContainer'),
+        maptypes.vector.normal.map,
+        {
+          zoom: 4,
+          center: { lat: lat, lng: long }  
+        });
+
+      map.addEventListener('tap', function(evt) {
+      // Log 'tap' and 'mouse' events:
+      console.log(evt.type, evt.currentPointer.type); 
+      });
+
+   var mapEvents = new H.mapevents.MapEvents(map);
+
+   var behavior = new H.mapevents.Behavior(mapEvents);
+      
+   
+      
+  
+</script>

@@ -1,11 +1,11 @@
 <html>
 <head>
 
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"type="text/javascript" charset="utf-8"></script>
    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"type="text/javascript" charset="utf-8"></script>
 
@@ -27,6 +27,11 @@ li {
   padding: 14px 16px;
   text-decoration: none;
   font-Size: 28px;
+}
+
+label {
+  font-Size: 16px;
+  margin-right: 20px;
 }
 
 .container {
@@ -53,6 +58,7 @@ li {
    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
    
    <h3>Let's Factor Engineer!</h3>
+   <br></br>
 
 
   
@@ -62,9 +68,13 @@ li {
          <p>Physics <input type = "text" name = "Physics" /></p>
          <p>Chemistry <input type = "text" name = "chemistry" /></p>
          <p>Maths <input type ="text" name = "Mathematics" /></p> -->
-         <p>Image Path <input type ="text" name = "impath" /></p>
 
-         <select name="state" size="1">
+      <h5>Select the state you wish to include in our linear regression </h5>
+
+      
+
+        <select name="state" size="1">
+        <option value="">--------</option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -119,15 +129,33 @@ li {
       </select>
       
       <br></br>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br><br>
-        <input type="submit" value="Submit">
+      <h5>Select the factors you wish to include in our linear regression </h5>
 
-         <p><input type = "submit" value = "submit" /></p>
+      <div width="100%">
+        <input type="checkbox" id="cases" name="cases" value="cases">
+        <label for="cases">Cases</label>
+
+        <input type="checkbox" id="Away from Home 3-6hr a Day" name="Away from Home 3-6hr a Day" value="Away from Home 3-6hr a Day">
+        <label for="Away from Home 3-6hr a Day">Away from home 3-6hr a day</label>
+      </div>
+
+      <div width="100%">
+
+        <input type="checkbox" id="COVID-Like Symptoms" name="COVID-Like Symptoms" value="COVID-Like Symptoms">
+        <label for="COVID-Like Symptoms">Covid-Like Symptoms</label>
+
+        <input type="checkbox" id="COVID-Like Symptoms in Community" name="gender" value="COVID-Like Symptoms in Community">
+        <label for="COVID-Like Symptoms in Community">COVID-Like Symptoms in Community</label>
+
+        <input type="checkbox" id="COVID-Related Doctor Visits" name="gender" value="COVID-Related Doctor Visits">
+        <label for="COVID-Related Doctor Visits">COVID-Related Doctor Visits</label>
+
+        <br>
+      </div>
+
+
+
+         <input class="btn btn-primary" type = "submit" value = "submit" />
       </form>
       
    </div>
