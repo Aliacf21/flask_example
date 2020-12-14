@@ -19,7 +19,6 @@ cymem==2.0.2
 Cython==0.27.3
 cytoolz==0.9.0
 dask==0.16.1
-dataclasses==0.7
 datashape==0.5.4
 decorator==4.2.1
 delphi-epidata==0.0.8
