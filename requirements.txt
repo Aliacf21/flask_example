@@ -16,7 +16,6 @@ cryptography==2.1.4
 cufflinks==0.16
 cycler==0.10.0
 cymem==2.0.2
-Cython==0.27.3
 datashape==0.5.4
 decorator==4.2.1
 delphi-epidata==0.0.8
