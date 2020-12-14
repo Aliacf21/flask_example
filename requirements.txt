@@ -139,7 +139,6 @@ six==1.11.0
 snowballstemmer==1.2.1
 sortedcollections==0.5.3
 sortedcontainers==1.5.9
-spacy==2.0.16
 Sphinx==1.6.6
 sphinxcontrib-websupport==1.0.1
 spyder==3.2.6
